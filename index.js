@@ -51,7 +51,7 @@ app.get('/checkrooms',(req,res)=>{
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://rockpaper.vercel.app/",
+        origin: "http://localhost:3000",
         methods: ["POST", "GET"],
     },
 
@@ -101,4 +101,3 @@ server.listen(8000, () => {
     console.log("Server has been started");
 })
 
-module.exports = app;
