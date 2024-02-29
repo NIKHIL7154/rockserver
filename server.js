@@ -51,7 +51,7 @@ app.get('/checkrooms',(req,res)=>{
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://rock-paper-scissor-sage-six.vercel.app/",
+        origin: "https://rockpaper.vercel.app/",
         methods: ["POST", "GET"],
     },
 
