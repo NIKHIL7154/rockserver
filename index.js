@@ -47,11 +47,11 @@ app.get('/checkrooms',(req,res)=>{
 })
 
 
-
+const Origin=process.env.META_ORIGIN;
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://rockpapersci.vercel.app",
+        origin: Origin,
         methods: ["POST", "GET"],
     },
 
